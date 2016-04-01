@@ -1,0 +1,47 @@
+{
+	"name": "glob-possible-parent",
+	"description": "Find out if a path can be a parent of a file you are looking for",
+	"version": "1.0.0",
+	"homepage": "https://github.com/MartinKolarik/glob-possible-parent",
+	"github": "https://github.com/MartinKolarik/glob-possible-parent",
+	"main": "lib/index.js",
+	"keywords": [
+		"file",
+		"find",
+		"glob",
+		"matches",
+		"parent",
+		"path",
+		"pattern"
+	],
+	"author": {
+		"name": "Martin Kolárik",
+		"email": "martin@kolarik.sk",
+		"url": "http://kolarik.sk"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"braces": "~1.8"
+	},
+	"devDependencies": {
+		"babel-cli": "^6",
+		"babel-preset-es2015": "^6",
+		"chai": "~3.5",
+		"istanbul": "v1.0.0-alpha.2",
+		"mocha": "~2.4",
+		"micromatch": "~2.3",
+		"minimatch": "~3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MartinKolarik/glob-possible-parent.git"
+	},
+	"bugs": {
+		"url": "https://github.com/MartinKolarik/glob-possible-parent/issues/"
+	},
+	"scripts": {
+		"build": "babel src --out-dir lib --presets es2015 --source-maps",
+		"coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
+		"test": "mocha"
+	}
+}
