@@ -27,8 +27,10 @@
 		"babel-cli": "^6",
 		"babel-preset-es2015": "^6",
 		"chai": "~3.5",
+		"coveralls": "~2.11",
 		"istanbul": "v1.0.0-alpha.2",
 		"mocha": "~2.4",
+		"mocha-lcov-reporter": "~1.2",
 		"micromatch": "~2.3",
 		"minimatch": "~3.0"
 	},
@@ -42,6 +44,7 @@
 	"scripts": {
 		"build": "babel src --out-dir lib --presets es2015 --source-maps",
 		"coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
+		"coverall": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf./coverage",
 		"test": "mocha"
 	}
 }
