@@ -1,0 +1,2 @@
+# glob-possible-parent [![Build Status](https://travis-ci.org/MartinKolarik/glob-possible-parent.svg?branch=master)](https://travis-ci.org/MartinKolarik/glob-possible-parent) [![Coverage Status](https://coveralls.io/repos/github/MartinKolarik/glob-possible-parent/badge.svg?branch=master)](https://coveralls.io/github/MartinKolarik/glob-possible-parent?branch=master)
+Find out if a path can be a parent of a file you are looking for
