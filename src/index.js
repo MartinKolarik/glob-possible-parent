@@ -196,7 +196,7 @@ function parse (pattern) {
 				if (typeof pp === 'string') {
 					// these character classes match slashes, and could generate
 					// some false positives; we'll replace them with double star
-					let ppIndex = pp.search(/\[!\[:(?:alnum|alpha|blank||digit|lower|upper|word|xdigit):]]|\[:punct:]/);
+					let ppIndex = pp.search(/\[!\[:(?:alnum|alpha|blank|digit|lower|upper|word|xdigit):]]|\[:punct:]/);
 
 					if (~ppIndex) {
 						let index = pp.substr(0, ppIndex - 1).lastIndexOf('/');
