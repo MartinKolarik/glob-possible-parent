@@ -20,8 +20,8 @@ directories which can't contain any matching files.
 var gpp = require('glob-possible-parent');
 var micromatch = require('micromatch'); // you can use any matcher implementation here
 
-// 1. use gpp() to transform the original pattern into an array of patterns which can be passed to the matching library
-// 2. create a RegExp from each pattern
+// 1. use gpp() to transform the original pattern into an array of patterns
+// 2. use micromatch to create a RegExp from each pattern
 // 3. join all created RegExps
 
 var gppRegExp = new RegExp('^(?:\\/$|(?:' + gpp('src/js/**/*.js').map(function (pattern) {
